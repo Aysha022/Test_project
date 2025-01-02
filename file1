@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+   <title>R U Cute?</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Updock&display=swap" rel="stylesheet">
+
+   <style>
+
+       body {
+        background-image: url('ribbon.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+   
+       #myVideo {
+         position: absolute;
+         right: 500px;
+         bottom: 100px;
+         top: 0px;
+         min-width: 35%;
+         min-height: 35%;
+
+       }
+
+       .text {
+         position: absolute;
+         left: 490px;
+         bottom: 550px;
+         text-align: center;
+         font-family: "Updock",serif;
+         font-size: x-large;
+         font-weight: 700;
+         color: rgb(255, 99, 206);
+       }
+
+       .y {
+          height: 30px;
+          width: 50px;
+          font-family: "Updock",serif;
+          font-size: large;
+          font-weight: 500;
+          color: rgb(246, 237, 237);
+          border: none;
+          background-color: palevioletred;
+          cursor: pointer;
+       }
+
+   </style>
+
+</head>
+
+<body>
+
+   <video autoplay muted loop id="myVideo">
+     <source src="cat.mp4" type="video/mp4">  
+   </video>
+
+   <div class="text">
+     <h2>Heyy Pookiee&#127872!!</h2>
+     Could you spare a few minutes(possibly,1 min ig) from your valuable time??&#128524<br><br>
+     <button class="y" onclick="yess()">Yes</button>
+     <button class="y" onclick="noo()">No</button>
+   </div>
+
+   <script>
+     function yess() {
+        window.location.href = "yes reply.html";
+      }
+
+      function noo() {
+        window.location.href = "no reply.html";
+      }
+
+   </script>
+
+
+</body>
+
+</html>
