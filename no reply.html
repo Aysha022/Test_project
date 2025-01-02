@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+     <title>Pookie is Busy:(</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+     <style>
+
+        body {
+         background-image: url('batman.png');
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+         background-size: auto;
+         background-color: rgb(255, 255, 123);
+        }
+
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+        }
+
+        .text {
+          position: absolute;
+          top: 250px;
+          left: 600px;
+          font-size: 300%;
+          font-family: "Emilys Candy",serif;
+          animation: fadeIn 3s ease-in-out; 
+        }
+
+        #exit-button {
+            width: 100px;
+            height: 30px;
+            border-radius: 18px;
+            position: absolute;
+            bottom: -200px;
+            left: 800px;
+            font-family: "Emilys Candy",serif;
+            font-size: small;
+            background-color: black;
+            color: yellow;
+        }
+
+        #exit-button:hover {
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        #exit-button:active {
+          opacity: 0.6;
+        }
+
+     </style>
+</head> 
+
+<body>
+    <div class = "text">
+       Okay Pookieee&#127799<br><br>
+       Come back when you are free&#128075
+       <button id="exit-button" onclick="exit()"> &#8592 Go Back</button>
+    </div>
+
+    <script>
+        function exit() {
+           window.location.href = "r u cute.html";
+        }
+    </script>
+</body>
+
+
+</html>
