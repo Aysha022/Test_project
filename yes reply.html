@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>Pookie is Ready:)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+     <style>
+      
+       body {
+        background-image: url('duck.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       }
+
+       .text {
+        position: absolute;
+        top: 250px;
+        left: 450px;
+        font-family: "Emilys Candy",serif;
+        font-size: xx-large;
+        font-weight: 700;
+       }
+ 
+       .test1 {
+          width: 70px;
+          height: 50px;
+          border: none;
+          border-radius: 50px;
+          background-color: hotpink;
+          color:crimson;
+          font-family: "Emilys Candy",serif;
+          font-size: large;
+          font-weight: bold;
+          position: absolute;
+          left: 300px;
+          top: 100px;
+          cursor: pointer;
+       }
+
+       .test1:hover {
+          text-transform: lowercase;
+       }
+
+       .test1:active {
+          box-shadow: 3px 3px 10px crimson;
+       }
+
+       .test2 {
+          width: 70px;
+          height: 50px;
+          border: none;
+          border-radius: 50px;
+          background-color: hotpink;
+          color:crimson;
+          font-family: "Emilys Candy",serif;
+          font-size: large;
+          font-weight: bold; 
+          position: absolute;
+          top: 100px;
+          left: 400px;
+          cursor: pointer;
+       }
+
+       .test2:hover {
+        text-transform: lowercase;
+       }
+       .test2:active {
+        box-shadow: 3px 3px 10px crimson;
+       }
+       
+
+     </style>
+</head>
+
+<body>
+    <div class="text">
+      Click NO if you're cyute&#129392 or YES if you're a cutie pookie dookie patootie&#127776
+      <button class="test1" onclick="doStuff()">YES</button>
+      <button class="test2" onclick="notDoStuff()">NO</button>
+    </div>
+
+    <script>
+
+        function notDoStuff() {
+          alert('Oops!!Something went wrong :(');
+        }
+        function doStuff() {
+            window.location.href = "realcute.html";
+        }
+    </script>
+</body>
+
+</html>
